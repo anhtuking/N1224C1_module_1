@@ -1,9 +1,8 @@
 package java_overview;
 
-import java.sql.SQLOutput;
 import java.util.Scanner;
 
-public class PhepTinh {
+public class Exercise2 {
     public static void main(String[] args) {
         Scanner in = new Scanner(System.in);
         System.out.println("Nhap so nguyen tu ban phim.");
