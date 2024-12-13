@@ -1,6 +1,6 @@
 package condition_structure;
 
-public class Exercise4 {
+public class Exercise5 {
     public static void main(String[] args) {
         double a = 1;
         double b = 2;
