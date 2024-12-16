@@ -10,7 +10,7 @@ public class Exercise10 {
 
         double sum = 0;
         for (int i = 0; i < n; i++) {
-            sum += 1 / i;
+            sum += 1.0 / i;
         }
         System.out.println("Tong = " + sum);
     }
