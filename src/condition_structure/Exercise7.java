@@ -9,9 +9,10 @@ public class Exercise7 {
         int tnct = sc.nextInt();
         double basic_salary = 650000;
 
-        double coefficient;
-
-        if (tnct < 12) {
+        double coefficient = 0;
+        if (tnct < 0) {
+            System.out.println("Tham nien cong tac phai lon hon 0.");
+        } else if (tnct < 12) {
             coefficient = 1.92;
         } else if (tnct < 36) {
             coefficient = 2.34;
@@ -22,6 +23,6 @@ public class Exercise7 {
         }
 
         double salary = basic_salary * coefficient;
-        System.out.println("Employee salary is: " + salary);
+        System.out.println("Luong cua nhan vien la: " + salary);
     }
 }
