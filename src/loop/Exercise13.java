@@ -21,6 +21,8 @@ public class Exercise13 {
             }
         }
 
+        System.out.printf("Uoc chung lon nhat cua %d va %d la %d. ", a, b, ucln);
+
         //bcnn
         int bcnn;
         for (int i = a; true; i++) {
@@ -30,7 +32,6 @@ public class Exercise13 {
             }
         }
 
-        System.out.printf("Uoc chung lon nhat cua %d va %d la %d ", a, b, ucln);
-        System.out.printf("Boi chung nho nhat cua %d va %d la %d ", a, b, bcnn);
+        System.out.printf("Boi chung nho nhat cua %d va %d la %d. ", a, b, bcnn);
     }
 }
