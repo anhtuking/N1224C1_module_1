@@ -14,8 +14,8 @@ public class Exercise2 {
 //            }
 //        }
 
-        for (int i = 1; i <= n; i+=2) {
-            System.out.print( i + "\t");
+        for (int i = 1; i <= n; i += 2) {
+            System.out.print(i + "\t");
         }
     }
 }
