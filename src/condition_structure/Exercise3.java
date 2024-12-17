@@ -15,9 +15,9 @@ public class Exercise3 {
         System.out.println(b);
 
         // cach 2 : Khong su dung bien tam
-        a = a + b;
-        b = a - b;
-        a = a - b;
+        a = a + b; //3
+        b = a - b; //1
+        a = a - b; //2
         System.out.println(a);
         System.out.println(b);
     }

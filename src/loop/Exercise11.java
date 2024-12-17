@@ -13,7 +13,7 @@ public class Exercise11 {
 
         for (int i = 1; i <= n; i++) {
             sum += 1.0 / fact;
-            fact *= (2 * i) * (2 * i + 1);
+            fact *= (2 * i) * (2 * i + 1); // tính giai thừa
         }
 
         System.out.print("Tong = " + sum);

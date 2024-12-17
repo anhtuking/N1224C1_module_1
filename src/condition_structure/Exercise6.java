@@ -13,7 +13,7 @@ public class Exercise6 {
         System.out.print("Nhap c: ");
         double c = sc.nextDouble();
 
-        if (a == 0) {
+        if (a == 0) { // a=0 => pt bậc 1
             if (b == 0) {
                 if (c == 0) {
                     System.out.println("Phuong trinh vo so nghiem.");
@@ -30,7 +30,7 @@ public class Exercise6 {
             } else if (delta == 0) {
                 System.out.println("Phuong trinh co nghiem kep la x = " + -b / (2 * a));
             } else {
-                System.out.println("Phuong trinh co nghiem x1 = " + (-b - Math.sqrt(delta)) / (2 * a));
+                System.out.println("Phuong trinh co nghiem x1 = " + (-b - Math.sqrt(delta)) / (2 * a)); // -b + căn bậc 2 delta
                 System.out.println("Phuong trinh co nghiem x2 = " + (-b + Math.sqrt(delta)) / (2 * a));
             }
         }
