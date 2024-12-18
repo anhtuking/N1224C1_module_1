@@ -6,36 +6,28 @@ public class Exercise24 {
     public static void main(String[] args) {
         Scanner sc = new Scanner(System.in);
 
-        System.out.print("Enter price: ");
-        int price = sc.nextInt();
+        System.out.print("Nhap gia tien: ");
+        int giaTien = sc.nextInt();
+        System.out.print("Nhap tien tra: ");
+        int tienTra = sc.nextInt();
 
-        System.out.print("Enter amount paid by customer: ");
-        int paid = sc.nextInt();
+        int tienThua = tienTra - giaTien;
+        int cout = 0;
 
-        int refund = paid - price; // tiền thối lại
-        int value;                 // mệnh giá
+        if (tienThua > 0) {
+            System.out.println("Tien tra lai: ");
+            int[] a = {500000, 200000, 100000, 50000, 20000, 10000, 5000, 2000, 1000};
 
-        for (int i = 2; i >= 0; i++) {
-            int coefficient = (int) Math.pow(10, i);
-
-            value = 5000 * refund;
-            if (refund > value) {
-                System.out.printf("%d bills %d\n", refund / value, value);
-                refund %= value;
+            for (int i = 0; i < a.length; i++) {
+                cout += tienThua / (a[i]);
+                tienThua %= a[i];
+                if (cout > 0) {
+                    System.out.println(cout + " tờ: " + " " + a[i]);
+                    cout = 0;
+                }
             }
-
-            value = 2000 * refund;
-            if (refund > value) {
-                System.out.printf("%d bills %d\n", refund / value, value);
-                refund %= value;
-            }
-
-            value = 1000 * refund;
-            if (refund > value) {
-                System.out.printf("%d bills %d\n", refund / value, value);
-                refund %= value;
-            }
+        } else {
+            System.out.println("Tra khong du tien!");
         }
-        System.out.println("Amount to be refunded: " + refund);
     }
 }
