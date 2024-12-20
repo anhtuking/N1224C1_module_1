@@ -43,14 +43,10 @@ public class Exercise1 {
 
     //a
     public static char toLowCase(char character) {
-        if ((character >= 'A' && character <= 'Z') || (character >= 'a' && character <= 'z')) {
-            if (character >= 'a' && character <= 'z') {
-                character -= 32;
-            } else {
+            if (character >= 'A' && character <= 'Z') {
                 character += 32;
             }
-        }
-        return character;
+        return (char) (character >= 'A' && character <= 'Z' ? character + 32 : character);
     }
 
     //b
@@ -93,11 +89,9 @@ public class Exercise1 {
     }
 
     //d
-    public static int min(double a, double b, double c, double d) {
-        int min = (int) Math.min(a, b);
-        min = (int) Math.min(min, c);
-        min = (int) Math.min(min, d);
-
-        return min;
+    public static double min(double a, double b, double c, double d) {
+        double min = Math.min(a, b);
+        min = Math.min(min, c);
+        return Math.min(min, d);
     }
 }
