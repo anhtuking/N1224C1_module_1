@@ -1,4 +1,4 @@
-package loop_structure;
+package loop;
 
 public class Exercise16 {
     public static void main(String[] args) {
